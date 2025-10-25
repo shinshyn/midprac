@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body
+    class="bg-[url('img/bg.jpg')] bg-cover bg-center bg-fixed text-gray-200 font-sans"
+  >
+    <div class="bg-black bg-opacity-90 min-h-screen p-6">
+      <nav
+        class="flex justify-center space-x-6 bg-gray-900 text-white py-3 mb-8"
+      >
+        <a href="index.html" class="hover:text-gray-400 transition">Home</a>
+        <a href="about.html" class="hover:text-gray-400 transition">About</a>
+        <a href="form.html" class="hover:text-gray-400 transition">Form</a>
+      </nav>
+
+      <div class="max-w-md mx-auto bg-gray-800 shadow-md rounded-lg p-6">
+        <h2 class="text-2xl font-bold mb-4 text-center text-white">
+          Tutoring Request Form
+        </h2>
+
+        <form class="space-y-5" autocomplete="off">
+          <div>
+            <label class="block text-white font-semibold mb-1" for="name">
+              Name:
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="w-full border border-gray-600 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-gray-900 text-white"
+              required
+            />
+          </div>
+
+          <div>
+            <label class="block text-white font-semibold mb-1" for="schedule">
+              What is your preferred schedule?
+            </label>
+            <textarea
+              id="schedule"
+              name="schedule"
+              rows="3"
+              class="w-full border border-gray-600 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-gray-900 text-white"
+              required
+            ></textarea>
+          </div>
+
+          <div>
+            <label class="block text-white font-semibold mb-1" for="topics">
+              What topics do you want to be tutored in?
+            </label>
+            <textarea
+              id="topics"
+              name="topics"
+              rows="4"
+              class="w-full border border-gray-600 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-gray-900 text-white"
+              required
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full bg-gray-700 hover:bg-green-700 text-white font-semibold rounded-lg px-3 py-2 transition duration-300"
+          >
+            Submit Form
+          </button>
+        </form>
+      </div>
+
+      <footer class="text-center text-gray-400 mt-8 mb-4 text-sm">
+        © 2025 WEBDEV 1 | MIDTERM EXAM
+      </footer>
+    </div>
+  </body>
+</html>

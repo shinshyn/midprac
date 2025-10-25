@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-black text-gray-200 font-sans min-h-screen p-6">
+    <nav
+      class="flex justify-center space-x-6 bg-gray-900 text-white py-3 mb-8 rounded"
+    >
+      <a href="index.html" class="hover:text-gray-400 transition">Home</a>
+      <a href="about.html" class="hover:text-gray-400 transition">About</a>
+      <a href="form.html" class="hover:text-gray-400 transition">Form</a>
+    </nav>
+    <nav
+      class="flex justify-center space-x-6 bg-white text-gray-800 py-3 mb-8 rounded"
+    >
+      <a href="css.html" class="hover:text-gray-400 transition">HTML</a>
+      <a href="git.html" class="hover:text-gray-400 transition">Git</a>
+      <a href="tailwind.html" class="hover:text-gray-400 transition"
+        >Tailwind</a
+      >
+    </nav>
+    <div class="max-w-4xl mx-auto space-y-6">
+      <h2 class="text-3xl font-bold text-white text-center">CSS</h2>
+      <h2 class="text-2xl font-bold text-white text-center">
+        Cascading Style Sheets
+      </h2>
+      <p class="text-gray-300 text-lg">
+        CSS is used to style HTML elements on web pages, controlling aspects
+        such as colors, fonts, layout, spacing, and animations.
+      </p>
+
+      <h3 class="text-2xl font-semibold text-white">CSS Syntax & Parts</h3>
+      <div class="overflow-x-auto">
+        <table
+          class="min-w-full border border-gray-700 text-left text-gray-200"
+        >
+          <tr class="bg-gray-800">
+            <th class="border border-gray-700 px-4 py-2">Part</th>
+            <th class="border border-gray-700 px-4 py-2">Description</th>
+          </tr>
+
+          <tr class="bg-gray-900">
+            <td class="border border-gray-700 px-4 py-2">Selector</td>
+            <td class="border border-gray-700 px-4 py-2">
+              Specifies which HTML element(s) to style (p, .class, #id)
+            </td>
+          </tr>
+          <tr class="bg-gray-800">
+            <td class="border border-gray-700 px-4 py-2">Property</td>
+            <td class="border border-gray-700 px-4 py-2">
+              The aspect to modify (color, font-size, margin)
+            </td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="border border-gray-700 px-4 py-2">Value</td>
+            <td class="border border-gray-700 px-4 py-2">
+              The setting for the property (red, 16px, etc.)
+            </td>
+          </tr>
+          <tr class="bg-gray-800">
+            <td class="border border-gray-700 px-4 py-2">Declaration</td>
+            <td class="border border-gray-700 px-4 py-2">
+              A property-value pair (color: red;)
+            </td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="border border-gray-700 px-4 py-2">Declaration Block</td>
+            <td class="border border-gray-700 px-4 py-2">
+              One or more declarations wrapped in { }
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <h3 class="text-2xl font-semibold text-white mt-6">
+        Common CSS Property Categories
+      </h3>
+      <div class="overflow-x-auto">
+        <table
+          class="min-w-full border border-gray-700 text-left text-gray-200"
+        >
+          <tr class="bg-gray-800">
+            <th class="border border-gray-700 px-4 py-2">Category</th>
+            <th class="border border-gray-700 px-4 py-2">Description</th>
+          </tr>
+
+          <tr class="bg-gray-900">
+            <td class="border border-gray-700 px-4 py-2">Text Properties</td>
+            <td class="border border-gray-700 px-4 py-2">
+              Control appearance, alignment, spacing, and decoration of text
+            </td>
+          </tr>
+          <tr class="bg-gray-800">
+            <td class="border border-gray-700 px-4 py-2">Box Model</td>
+            <td class="border border-gray-700 px-4 py-2">
+              Manage spacing, borders, padding, and margins of elements
+            </td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="border border-gray-700 px-4 py-2">Background</td>
+            <td class="border border-gray-700 px-4 py-2">
+              Set color, image, position, and repetition of backgrounds
+            </td>
+          </tr>
+          <tr class="bg-gray-800">
+            <td class="border border-gray-700 px-4 py-2">Layout & Display</td>
+            <td class="border border-gray-700 px-4 py-2">
+              Control element positioning and visibility (flex, grid, block,
+              inline)
+            </td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="border border-gray-700 px-4 py-2">Flexbox</td>
+            <td class="border border-gray-700 px-4 py-2">
+              Create responsive layouts using flex container and item properties
+            </td>
+          </tr>
+          <tr class="bg-gray-800">
+            <td class="border border-gray-700 px-4 py-2">
+              Animation & Transition
+            </td>
+            <td class="border border-gray-700 px-4 py-2">
+              Add motion effects to elements using CSS properties
+            </td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="border border-gray-700 px-4 py-2">
+              Effects & Visibility
+            </td>
+            <td class="border border-gray-700 px-4 py-2">
+              Apply transparency, shadows, filters, and visibility settings
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <h3 class="text-2xl font-semibold text-white mt-6">CSS Grid System</h3>
+      <p class="text-gray-300">
+        The CSS Grid System allows you to create layouts with rows and columns,
+        providing precise control for complex designs.
+      </p>
+      <div class="overflow-x-auto">
+        <table
+          class="min-w-full border border-gray-700 text-left text-gray-200"
+        >
+          <tr class="bg-gray-800">
+            <th class="border border-gray-700 px-4 py-2">Part</th>
+            <th class="border border-gray-700 px-4 py-2">Description</th>
+          </tr>
+
+          <tr class="bg-gray-900">
+            <td class="border border-gray-700 px-4 py-2">Grid Container</td>
+            <td class="border border-gray-700 px-4 py-2">
+              The parent element with display: grid, containing grid items
+            </td>
+          </tr>
+          <tr class="bg-gray-800">
+            <td class="border border-gray-700 px-4 py-2">Grid Items</td>
+            <td class="border border-gray-700 px-4 py-2">
+              Child elements inside the grid container
+            </td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="border border-gray-700 px-4 py-2">Grid Lines</td>
+            <td class="border border-gray-700 px-4 py-2">
+              Dividing lines that define rows and columns
+            </td>
+          </tr>
+          <tr class="bg-gray-800">
+            <td class="border border-gray-700 px-4 py-2">Grid Tracks</td>
+            <td class="border border-gray-700 px-4 py-2">
+              Rows or columns formed between grid lines
+            </td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="border border-gray-700 px-4 py-2">Grid Cells</td>
+            <td class="border border-gray-700 px-4 py-2">
+              Individual boxes inside the grid
+            </td>
+          </tr>
+          <tr class="bg-gray-800">
+            <td class="border border-gray-700 px-4 py-2">Grid Area</td>
+            <td class="border border-gray-700 px-4 py-2">
+              Space occupied by a grid item across rows and columns
+            </td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="border border-gray-700 px-4 py-2">Gap (Gutter)</td>
+            <td class="border border-gray-700 px-4 py-2">
+              Spacing between grid items, controlled by gap, row-gap, column-gap
+            </td>
+          </tr>
+          <tr class="bg-gray-800">
+            <td class="border border-gray-700 px-4 py-2">Nested Grids</td>
+            <td class="border border-gray-700 px-4 py-2">
+              Grids placed within grids
+            </td>
+          </tr>
+          <tr class="bg-gray-900">
+            <td class="border border-gray-700 px-4 py-2">Media Queries</td>
+            <td class="border border-gray-700 px-4 py-2">
+              Adapt layouts for different screen sizes
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="text-center mt-8 text-gray-300">
+      <footer>
+        <h4>© 2025 WEBDEV 1 | MIDTERM EXAM</h4>
+      </footer>
+    </div>
+  </body>
+</html>
